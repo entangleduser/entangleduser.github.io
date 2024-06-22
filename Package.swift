@@ -17,8 +17,7 @@ let package = Package(
    url: "https://github.com/entangleduser/Breakfast.git", branch: "main"
   ),
   .package(url: "https://github.com/acrlc/Acrylic.git", branch: "main"),
-  .package(path: "~/.git/acrlc/swift-shell"),
-//  .package(url: "https://github.com/acrlc/swift-shell", branch: "main"),
+  .package(url: "https://github.com/acrlc/swift-shell", branch: "main"),
   .package(url: "https://github.com/swiftwasm/carton", branch: "main")
  ],
  targets: [
