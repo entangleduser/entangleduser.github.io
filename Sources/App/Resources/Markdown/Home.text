@@ -1,0 +1,29 @@
+The experience of working on a framework stack is that you want to make as little changes as possible and do as much testing as possible after making an assesment about the initial requirements. The less rewriting and rewiring, you have to do with an interface which is structured for developers to adapt, the more time you can spend creating and enjoying the features of life (which are built-in). It all starts with an idea, nothing really implied if you know about your tools.
+
+The good thing is there are standards for creating reusable and interesting swift code. Anyone who can leverage the subconscious, less esoteric thread of idiomatic understanding, is built for more modern programming languages. Functional design is a major component of any useful system, but one must decide for something which cannot decide for itself, which is the computer.
+
+### About me
+I have a background in art (drawing), which was my first passion. This left me for a while after learning about css, html, and objective-c. Then I started to learn music, eventually got back into science and after receiving my first computer in about 7 years, made the decision to start learning swift. It took me about a month to get the basic language down and start making user interfaces, while working overtime at another job. I didn’t have many opportunities at my location, but for reasons due to discrimination and lack of management I had to leave that position.
+
+To be brief, what I know isn’t that important. At times, there have been moments of creativity and other times it’s been nothing but hard work, and that has produced what you can see on github. Open source ideas and answers are the key to unlocking a future where we can solve problems knowing we have a common source of truth, and what’s a good idea if you can’t share it with the world.
+
+### Hello, World!
+###### About this website
+##### This website is written in swift compiled web assembly, with this post rendered into the text markup language, html.
+###### Source code 
+[entangleduser.github.io](https://github.com/entangleduser/entangleduser.github.io)
+
+#### What’s next…
+##### First of all, this has been an effort of mine, which is made possible, due to the swift community pushing forward where change is needed.
+
+##### Acrylic is a framework with a dedicated set of tools on github. It was an idea that originated early 2023. The repository was opened late 2023, but the framework wasn’t initially released until early March 2024.
+###### Source code
+[acrlc/acrylic](https://github.com/acrlc/acrylic)
+
+####
+##### The goal of sharing my work (all of this) is that there’s some place where I will have the opportunity to work with other people to create apps that enhance the life of others.
+###### I have many projects that I'm working on, but none more important than the other.
+
+### Contact info
+[entangledUser](https://github.com/entangleduser)
+<williamluke@me.com>

@@ -1,0 +1,10 @@
+.DS_Store
+.build
+.swiftpm
+Package.resolved
+/Bundle
+node_modules
+package.json
+package-lock.json
+/Scripts/*.wasm
+/Sources/App/Resources/Javascript
