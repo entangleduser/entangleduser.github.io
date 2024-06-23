@@ -1,5 +1,5 @@
 #!/usr/bin/env swift-shell
-import Shell // $git/acrlc/shell
+import Shell // @git/acrlc/shell
 
 let inputs = CommandLine.arguments[1...]
 var arguments = [
