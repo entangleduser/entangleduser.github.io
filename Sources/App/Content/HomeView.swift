@@ -1,14 +1,10 @@
-import Acrylic
 import Foundation
 import Views
 
 struct HomeView: View {
- @ObservedAlias(\Resources.Text.home, true)
- var text
-
  var body: some View {
   VStack(alignment: .leading) {
-   MarkdownText(id: .home, text)
+   MarkdownText(id: .home, Resources.Text.shared.home)
     .font(.body)
     .opacity(0.77)
     .padding(.horizontal)

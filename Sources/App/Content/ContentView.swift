@@ -1,11 +1,9 @@
 import Core
-import Foundation
 import Views
 
 struct ContentView: View {
- @EnvironmentObject
- var blog: Blog
- 
+ let blog = Blog.shared
+
  var githubLink: some View {
   Link("Github", destination: .github)
    .foregroundStyle(.secondary)
@@ -15,14 +13,12 @@ struct ContentView: View {
  #if os(WASI)
  func toolbar() -> some View {
   HStack(spacing: 0) {
-   RouteLink(id: .home, interface: $blog.interface) {
-    Text(blog.title)
-     .lineLimit(1)
-     .font(.mediumHeader)
-     .padding(.vertical, 11.5)
-     .opacity(0.77)
-   }
-   .offset(y: -2)
+   Text(blog.title)
+    .lineLimit(1)
+    .font(.mediumHeader)
+    .padding(.vertical, 11.5)
+    .opacity(0.77)
+    .offset(y: -2)
 
    Link("Github", destination: .github)
     .font(.body)
@@ -46,36 +42,12 @@ struct ContentView: View {
 
  @ViewBuilder
  func detail() -> some View {
-  Group {
-   let interface = blog.interface
-   switch interface {
-   case .home, .none:
-    HomeView()
-   default:
-    #if !canImport(SwiftUI)
-    ScrollView {
-     VStack(alignment: .center) {
-      Spacer()
-      HStack(alignment: .center) {
-       Spacer()
-       detailPlaceholder
-        .frame(alignment: .center)
-       Spacer()
-      }
-      Spacer()
-     }
-     .padding()
-    }
-    #else
-    detailPlaceholder
-    #endif
-   }
-  }
-  .toolbar(content: toolbar)
+  HomeView()
+   .toolbar(content: toolbar)
  }
 
  var body: some View {
-  #if !canImport(SwiftUI)
+  #if os(WASI)
   NavigationView {
    detail()
   }

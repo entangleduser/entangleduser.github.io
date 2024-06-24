@@ -1,14 +1,22 @@
 import Views
 
-@main
 struct BlogApp: App {
- @Alias(Blog.self)
- var blog: Blog
+ let blog = Blog.shared
 
  var body: some Scene {
   WindowGroup(blog.name) {
    ContentView()
-    .environmentObject(blog)
+  }
+ }
+}
+
+@main
+struct LoadApp {
+ static func main() {
+  Blog.shared.load()
+  Task { @MainActor in
+   await Resources.Text.shared.load()
+   BlogApp.main()
   }
  }
 }

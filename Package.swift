@@ -16,7 +16,6 @@ let package = Package(
   .package(
    url: "https://github.com/entangleduser/Breakfast.git", branch: "main"
   ),
-  .package(url: "https://github.com/acrlc/Acrylic.git", branch: "main"),
   .package(url: "https://github.com/acrlc/swift-shell", branch: "main"),
   .package(url: "https://github.com/swiftwasm/carton", branch: "main")
  ],
@@ -28,7 +27,6 @@ let package = Package(
     "Core",
     .product(name: "Extensions", package: "Core"),
     "Configuration",
-    "Acrylic",
     "Views",
     "Posts"
    ],
